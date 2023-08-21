@@ -9,6 +9,9 @@
 6. Write your plugins
 
 
+# Notes
+- After upgrading gradle version 8.1, the libs explicit calls problems are solved
+
 
 # Tutorial 
 Android Gradle plugin : It knows how to build and package and Android project, whether it's an app or 
