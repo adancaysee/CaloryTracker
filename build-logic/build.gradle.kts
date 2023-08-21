@@ -1,4 +1,3 @@
-
 plugins {
     `kotlin-dsl`
 }
@@ -10,7 +9,7 @@ dependencies {
 
 gradlePlugin {
     plugins {
-        register("androidApplication") {
+        register("androidApplicationPlugin") {
             id = "calorietracker.android.application"
             implementationClass = "AndroidApplicationPlugin"
         }
@@ -19,4 +18,5 @@ gradlePlugin {
             implementationClass = "AndroidApplicationComposePlugin"
         }
     }
+
 }
