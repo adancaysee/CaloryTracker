@@ -1,7 +1,9 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":onboarding:presentation")
 
 
+include(":core:design_system")
 
 
 
@@ -22,7 +24,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "CaloryTracker"
 include(":app")
+include(":core")
 include(":onboarding")
-include(":onboarding:onboarding_domain")
-include(":onboarding:onboarding_presentation")
 includeBuild("build-logic")

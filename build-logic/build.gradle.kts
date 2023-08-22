@@ -9,7 +9,7 @@ dependencies {
 
 gradlePlugin {
     plugins {
-        register("androidApplicationPlugin") {
+        register("androidApplication") {
             id = "calorietracker.android.application"
             implementationClass = "AndroidApplicationPlugin"
         }
@@ -17,6 +17,15 @@ gradlePlugin {
             id = "calorietracker.android.application.compose"
             implementationClass = "AndroidApplicationComposePlugin"
         }
+        register("androidLibrary") {
+            id = "calorietracker.android.library"
+            implementationClass = "AndroidLibraryPlugin"
+        }
+        register("androidLibraryCompose") {
+            id = "calorietracker.android.library.compose"
+            implementationClass = "AndroidLibraryComposePlugin"
+        }
+
     }
 
 }
