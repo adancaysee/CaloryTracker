@@ -1,5 +1,10 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":core:ui")
+
+
+
+
 include(":onboarding:presentation")
 
 

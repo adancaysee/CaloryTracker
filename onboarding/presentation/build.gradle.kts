@@ -22,5 +22,5 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:design_system"))
+    implementation(project(":core:ui"))
 }

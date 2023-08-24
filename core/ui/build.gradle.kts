@@ -4,10 +4,9 @@ plugins {
 }
 
 android {
-    namespace = "com.learning.design_system"
+    namespace = "com.learning.ui"
 
     defaultConfig {
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -25,6 +24,5 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.compose.runtime)
 
 }
