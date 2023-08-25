@@ -1,17 +1,4 @@
 @file:Suppress("UnstableApiUsage")
-
-include(":core:ui")
-
-
-
-
-include(":onboarding:presentation")
-
-
-include(":core:design_system")
-
-
-
 pluginManagement {
     repositories {
         google()
@@ -30,5 +17,8 @@ dependencyResolutionManagement {
 rootProject.name = "CaloryTracker"
 include(":app")
 include(":core")
+include(":core:design_system")
+include(":core:ui")
 include(":onboarding")
+include(":onboarding:presentation")
 includeBuild("build-logic")

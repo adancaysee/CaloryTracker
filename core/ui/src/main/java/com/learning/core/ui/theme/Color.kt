@@ -1,4 +1,4 @@
-package com.learning.calorytracker.ui.theme
+package com.learning.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

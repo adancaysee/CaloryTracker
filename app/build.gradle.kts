@@ -36,6 +36,11 @@ android {
 
 dependencies {
     //implementation(libs.androidx.appcompat)
+
+    implementation(project(":core:ui"))
+    implementation(project(":onboarding:presentation"))
+    implementation(project(":core:ui"))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
