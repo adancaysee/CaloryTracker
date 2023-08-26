@@ -16,8 +16,6 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
-import com.learning.core.ui.theme.Dimensions
-import com.learning.core.ui.theme.LocalSpacing
 
 private val DarkColorScheme = darkColorScheme(
     primary = BrightGreen,
@@ -42,7 +40,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun CaloryTrackerTheme(
+fun CalorieTrackerTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
@@ -66,6 +64,9 @@ fun CaloryTrackerTheme(
         }
     }
 
+    /**
+     * spacing -- past down in the compose tree
+     */
     CompositionLocalProvider(LocalSpacing provides Dimensions()) {
         MaterialTheme(
             colorScheme = colorScheme,

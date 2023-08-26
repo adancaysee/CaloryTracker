@@ -21,7 +21,7 @@ fun ActionButton(
         onClick = onClick,
         enabled = isEnabled,
     ) {
-        ProvideTextStyle(value = MaterialTheme.typography.labelSmall) {
+        ProvideTextStyle(value = MaterialTheme.typography.labelLarge) {
             Text(
                 text = text,
                 modifier = Modifier.padding(LocalSpacing.current.spaceSmall)
