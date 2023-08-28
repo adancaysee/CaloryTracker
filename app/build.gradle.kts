@@ -1,6 +1,7 @@
 plugins {
     id("calorietracker.android.application")
     id("calorietracker.android.application.compose")
+    id("calorietracker.android.hilt")
 }
 
 android {

@@ -25,6 +25,10 @@ gradlePlugin {
             id = "calorietracker.android.library.compose"
             implementationClass = "AndroidLibraryComposePlugin"
         }
+        register("androidHilt") {
+            id = "calorietracker.android.hilt"
+            implementationClass = "AndroidHiltPlugin"
+        }
 
     }
 

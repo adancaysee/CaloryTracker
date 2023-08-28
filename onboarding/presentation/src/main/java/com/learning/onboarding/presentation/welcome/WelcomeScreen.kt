@@ -44,7 +44,7 @@ fun WelcomeScreen(
             style = MaterialTheme.typography.displaySmall
         )
         Spacer(modifier = Modifier.height(spacing.spaceMedium))
-        ActionButton(text = stringResource(id = R.string.next))
+        ActionButton(text = stringResource(id = R.string.next), onClick = onNextClick)
     }
 }
 
