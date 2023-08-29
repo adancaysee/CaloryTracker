@@ -3,7 +3,7 @@ package com.learning.core.datastore
 import model.ActivityLevel
 import model.Gender
 import model.GoalType
-import model.UserInfo
+import model.UserPreferences
 
 interface Preferences {
     fun saveGender(gender: Gender)
@@ -16,7 +16,7 @@ interface Preferences {
     fun saveProteinRatio(ratio: Float)
     fun saveFatRatio(ratio: Float)
 
-    fun loadUserInfo(): UserInfo
+    fun loadUserInfo(): UserPreferences
 
     companion object {
         const val KEY_GENDER = "gender"

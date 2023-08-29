@@ -1,5 +1,7 @@
 plugins {
     id("calorietracker.android.library")
+    id("calorietracker.android.hilt")
+
 }
 
 android {
@@ -11,7 +13,12 @@ android {
     }
 }
 
+
+
+
 dependencies {
-    implementation(libs.androidx.dataStore.core)
     testImplementation(libs.junit)
+    implementation(libs.androidx.dataStore.preferences)
+
+
 }
