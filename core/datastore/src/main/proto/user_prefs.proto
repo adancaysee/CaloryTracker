@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "com.learning.core.datastore";
+option java_multiple_files = true;
+
+message UserPreferencesProto {
+  string gender = 1;
+  int32 age = 2;
+  float weight = 3;
+  int32 height = 4;
+  string activity_level = 5;
+  string goal_type = 6;
+  float carb_ratio = 7;
+  float protein_ratio = 8;
+  float fat_ratio = 9;
+}
+
+
+
+
+
+

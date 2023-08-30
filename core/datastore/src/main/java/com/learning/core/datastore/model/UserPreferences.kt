@@ -1,4 +1,4 @@
-package model
+package com.learning.core.datastore.model
 
 data class UserPreferences(
     val gender: Gender,

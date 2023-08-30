@@ -41,6 +41,7 @@ dependencies {
     implementation(project(":core:ui"))
     implementation(project(":onboarding:presentation"))
     implementation(project(":core:ui"))
+    implementation(project(":core:datastore"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

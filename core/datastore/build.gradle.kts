@@ -1,7 +1,7 @@
 plugins {
     id("calorietracker.android.library")
     id("calorietracker.android.hilt")
-
+    alias(libs.plugins.protobuf)
 }
 
 android {
@@ -13,12 +13,27 @@ android {
     }
 }
 
-
-
-
 dependencies {
     testImplementation(libs.junit)
     implementation(libs.androidx.dataStore.preferences)
+    implementation(libs.protobuf.kotlin.lite)
 
+}
 
+protobuf {
+    protoc {
+        artifact = libs.protobuf.protoc.get().toString()
+    }
+    generateProtoTasks {
+        all().forEach { task ->
+            task.builtins {
+                val java by registering {
+                    option("lite")
+                }
+                val kotlin by registering {
+                    option("lite")
+                }
+            }
+        }
+    }
 }
