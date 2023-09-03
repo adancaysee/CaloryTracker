@@ -21,11 +21,9 @@ object DataStoreModule {
     @Singleton
     fun provideDataStoreModule(
         @ApplicationContext context: Context,
-        //ioDispatcher: CoroutineDispatcher,
     ): DataStore<UserPreferencesProto> =
         DataStoreFactory.create(
             serializer = UserPreferencesSerializer,
-            //scope = CoroutineScope(ioDispatcher + SupervisorJob()),
         ) {
             context.dataStoreFile("user_preferences.pb")
         }
